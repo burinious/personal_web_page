@@ -149,7 +149,7 @@ p {
   line-height: 1.2;
   text-transform: capitalize;
   margin-bottom: 29px;
-  display: flex;
+  display: block;
 }
 
 .profile-txt p {
