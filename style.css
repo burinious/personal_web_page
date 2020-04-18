@@ -1,6 +1,7 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Rubik", sans-serif;
   font-weight: normal;
@@ -239,23 +240,50 @@ p {
     margin-bottom: 2rem;
   }
 }
-@media screen and (min-width: 375px) {
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .profile-txt h1 {
-    font-size: 3.5rem;
-    width: 250%;
+    font-size: 2rem;
+    width: 20rem;
+    text-align: center;
+    margin-left: -9rem;
   }
 
   .profile-txt p {
     margin-bottom: 8rem;
-    width: 250%;
-    align-items: center;
-    padding-left: 2rem;
+    width: 20rem;
+    text-align: justify;
+    margin-left: -9rem;
   }
+
   .main-pix img {
-    padding-right: 2rem;
+    margin-left: -9rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .profile-txt h1 {
+    font-size: 2rem;
+    width: 400%;
+    text-align: center;
+    margin-left: -5rem;
+  }
+
+  .profile-txt p {
+    margin-bottom: 8rem;
+    width: 20rem;
+    text-align: justify;
+    margin-left: -7.2rem;
+  }
+
+  .main-pix img {
+    margin-left: -8rem;
+    text-align: center;
   }
 
 }
+
 /* 320px.
 480px.
 600px.
@@ -264,90 +292,147 @@ p {
 1024px.
 1200px. */
 
-  /* about me */
-  #about {
-    background-image: url(/images/section_bg04.jpg);
-    margin-top: -2rem;
-    margin-bottom: -2.5rem;
-    padding: 0 4rem;
-  }
+/* about me */
+#about {
+  background-image: url(/images/section_bg04.jpg);
+  margin-top: -2rem;
+  margin-bottom: -2.5rem;
+  padding: 0 4rem;
+}
 
-  #about h2 {
-    color: cadetblue;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
+#about h2 {
+  color: cadetblue;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#about h3 {
+  text-transform: uppercase;
+  margin-left: 10rem;
+}
+
+#about h3 span {
+  color: cadetblue;
+}
+
+#about h4 {
+  text-align: center;
+  color: darkcyan;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 925px) {
+  #about {
+    margin-bottom: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
   }
 
   #about h3 {
-    text-transform: uppercase;
-    margin-left: 10rem;
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #about {
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #about {
+    padding-top: 8rem;
   }
 
-  #about h3 span {
-    color: cadetblue;
+  .about-text {
+    width: 28rem;
+    margin-left: -8rem;
+    text-align: justify;
   }
 
   #about h4 {
     text-align: center;
-    color: darkcyan;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 2rem;
+    padding-left: 5rem;
   }
-  @media screen and (max-width: 925px) {
-    #about {
-      margin-bottom: 2rem;
-      padding: 2rem 4rem 2rem 4rem;
-    }
+}
 
-    #about h3 {
-      margin-left: 8rem;
-    }
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  #about {
+    padding-top: 8rem;
   }
-  @media screen and (max-width: 700px) {
-    #about {
-      padding-top: 3rem;
-    }
+
+  .about-text {
+    margin-left: -8rem;
+    text-align: justify;
   }
-  @media screen and (min-width: 375px) {
-    #about{
-    padding-top: 6rem;
-  }
-  #about h4{
+
+  #about h4 {
     text-align: center;
     padding-left: 5rem;
   }
-  }
-  /* forms */
+}
+
+/* forms */
+.contact-block {
+  padding: 3rem;
+  max-width: 50%;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
   .contact-block {
-    padding: 3rem;
-    max-width: 50%;
-    margin: auto;
-    background-color: whitesmoke;
+    margin-left: -1.2rem;
   }
-  @media screen and (min-width: 375px) {
-    .contact-block {
-      margin-left: -1rem;
-    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .contact-block {
+    margin-left: -1.2rem;
+    max-width: 20rem;
   }
-  
+
+  textarea {
+    width: 15rem;
+  }
+}
+
+.call {
+  color: cadetblue;
+  font-size: large;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   .call {
-    color: cadetblue;
-    font-size: large;
-    font-weight: 500;
-    font-style: italic;
+    text-align: center;
   }
-  @media screen and (min-width: 375px) {
+  .form-heading {
+    width: 120%;
+    text-align: center;
+  }
+  @media screen and (min-device-width: 414px) and (max-device-width: 736px) {
     .call {
       text-align: center;
-      width: 300%;
+      width: 120%;
+      margin-bottom: 0.9rem;
     }
-    .form-heading{
-      width: 300%;
+
+    .form-heading {
+      width: 120%;
       text-align: center;
     }
+    input,select{
+      width: 200%;
+    }
+    textarea{
+      width: 20rem;
+    }
   }
+
   label {
     display: block;
     font-weight: bold;
@@ -374,12 +459,15 @@ p {
     width: 80%;
     padding: 0.25em 0.5em;
   }
+
   @media screen and (max-width: 700px) {
+
     input,
-  select {
-    padding: 0.25em 0.5em;
+    select {
+      padding: 0.25em 0.5em;
     }
   }
+
   [type="checkbox"],
   [type="radio"] {
     margin-bottom: 0.5em;
