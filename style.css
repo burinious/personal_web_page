@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Rubik", sans-serif;
   font-weight: normal;
@@ -146,7 +149,7 @@ p {
   line-height: 1.2;
   text-transform: capitalize;
   margin-bottom: 29px;
-  display: block;
+  display: flex;
 }
 
 .profile-txt p {
@@ -236,6 +239,30 @@ p {
     margin-bottom: 2rem;
   }
 }
+@media screen and (min-width: 375px) {
+  .profile-txt h1 {
+    font-size: 3.5rem;
+    width: 250%;
+  }
+
+  .profile-txt p {
+    margin-bottom: 8rem;
+    width: 250%;
+    align-items: center;
+    padding-left: 2rem;
+  }
+  .main-pix img {
+    padding-right: 2rem;
+  }
+
+}
+/* 320px.
+480px.
+600px.
+768px.
+900px.
+1024px.
+1200px. */
 
   /* about me */
   #about {
@@ -283,7 +310,15 @@ p {
       padding-top: 3rem;
     }
   }
-
+  @media screen and (min-width: 375px) {
+    #about{
+    padding-top: 6rem;
+  }
+  #about h4{
+    text-align: center;
+    padding-left: 5rem;
+  }
+  }
   /* forms */
   .contact-block {
     padding: 3rem;
@@ -291,15 +326,28 @@ p {
     margin: auto;
     background-color: whitesmoke;
   }
+  @media screen and (min-width: 375px) {
+    .contact-block {
+      margin-left: -1rem;
+    }
+  }
   
   .call {
     color: cadetblue;
     font-size: large;
     font-weight: 500;
     font-style: italic;
-
   }
-
+  @media screen and (min-width: 375px) {
+    .call {
+      text-align: center;
+      width: 300%;
+    }
+    .form-heading{
+      width: 300%;
+      text-align: center;
+    }
+  }
   label {
     display: block;
     font-weight: bold;
