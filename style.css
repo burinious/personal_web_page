@@ -297,8 +297,17 @@ p {
   .main-pix img {
     margin-left: -3rem;
     text-align: center;
+  }cange
+}
+  @media only screen and (min-device-width: 425px) and (max-device-width: 483px) and (-webkit-min-device-pixel-ratio: 2){
+    .profile-txt p {
+      width: 28rem;
+      margin-left: 10rem;
+      padding-right: -10rem;
+    }
+    .main-pix img {
+      padding-left: 5rem;
   }
-
 }
 @media screen 
   and (min-device-width: 360px) 
@@ -480,7 +489,15 @@ padding-top: 4rem;
       padding-left: 8rem;
     }
   }
-
+  @media only screen and (min-device-width: 425px) and (max-device-width: 483px) and (-webkit-min-device-pixel-ratio: 2){
+    #about {
+      width: 28rem;
+    }
+    .about-text {
+      margin-left: -10rem;
+      text-align: justify;
+    }
+  }
   @media screen 
   and (min-device-width: 768px) and (max-device-width: 768px){}
   #about{
