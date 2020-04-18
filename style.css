@@ -417,16 +417,15 @@ p {
   @media screen and (min-device-width: 414px) and (max-device-width: 736px) {
     .call {
       text-align: center;
-      width: 120%;
+      width: 130%;
       margin-bottom: 0.9rem;
+      padding-left: 1rem;
     }
 
     .form-heading {
-      width: 120%;
+      width: 130%;
       text-align: center;
-    }
-    input,select{
-      width: 200%;
+      padding-left: 1.5rem;
     }
     textarea{
       width: 20rem;
@@ -456,7 +455,7 @@ p {
     display: inline-block;
     font-size: 1em;
     margin-bottom: 1em;
-    width: 80%;
+    width: 100%;
     padding: 0.25em 0.5em;
   }
 
