@@ -239,7 +239,13 @@ p {
     margin-bottom: 2rem;
   }
 }
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
+  .main-pix img {
+    margin-right: 2.5rem;
+    text-align: center; 
 
+  }
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
   .profile-txt h1 {
     font-size: 2rem;
@@ -262,13 +268,23 @@ p {
     
   }
 }
-
+@media screen and (min-device-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2){
+  .profile-txt h1 {
+    padding-left: 2rem;
+  }
+  .profile-txt p {
+    margin-bottom: 8rem;
+    width: 20rem;
+    text-align: justify;
+    margin-left: -8rem;
+  }
+}
 @media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
   .profile-txt h1 {
     font-size: 2rem;
-    width: 400%;
+    width: 28rem;
     text-align: center;
-    margin-left: -5rem;
+    margin-left: -12rem;
   }
 
   .profile-txt p {
@@ -283,6 +299,30 @@ p {
     text-align: center;
   }
 
+}
+@media screen 
+  and (min-device-width: 360px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .profile-txt h1 {
+      width: 20rem;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-left: -10rem;
+      margin-right: 15rem;
+      margin-bottom: -1rem;
+    }
+    .profile-txt p {
+      margin-bottom: 8rem;
+      width: 20rem;
+      margin-left: -10rem;
+      padding: 2rem;
+    }
+    .main-pix img {
+      margin-left: -8rem;
+      margin-top: -8rem;
+      text-align: center;
+    }
 }
 @media screen 
   and (min-device-width: 320px) 
@@ -319,12 +359,13 @@ p {
       margin-left: -4.5rem;
     }
     .main-pix img {
-      margin-left: -2rem;
-      margin-top: -18rem;
+      margin-left: -1rem;
+      margin-top: -11rem;
       text-align: center;
     }
   
 }
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -368,7 +409,20 @@ p {
   font-style: italic;
   font-size: 2rem;
 }
-
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
+  #about h2{
+padding-top: 4rem;
+  }
+  .about-text {
+    width: 28rem;
+    margin-left: -11rem;
+    text-align: justify;
+  }
+  #about h4 {
+    text-align: center;
+    padding-left: 8rem;
+  }
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
   #about h2{
     padding-top: 6rem;
@@ -384,7 +438,11 @@ p {
     padding-left: 5rem;
   }
 }
-
+@media screen and (min-device-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2){
+  #about h4 {
+    padding-left: 8rem;
+  }
+}
 @media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   #about {
     padding-top: 8rem;
@@ -448,10 +506,15 @@ p {
 textarea{
   width: 28rem;
 }
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
+  textarea{
+    width: 16rem;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1){
   .contact-block {
     margin-left: -1.3rem;
+    width: 20rem;
   }
   .call{
     margin-bottom: 0.8rem;
@@ -465,7 +528,16 @@ textarea{
       padding-right: 3rem;
   }
   textarea{
+    max-width: 18rem;
+  }
+}
+@media screen and (min-device-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2){
+  .contact-block {
+    margin-left: 1rem;
     width: 18rem;
+  }
+  textarea{
+    width: 28rem;
   }
 }
   @media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
@@ -494,6 +566,17 @@ textarea{
   and (min-device-width: 320px) 
   and (max-device-height: 568px) 
   and (-webkit-device-pixel-ratio: 2){
+textarea{
+  width: 100%;
+}
+  }
+  @media screen 
+  and (min-device-width: 375px) 
+  and (max-device-height: 812px) 
+  and (-webkit-device-pixel-ratio: 1){
+    .contact-block{
+      width: 28rem;;
+    }
 textarea{
   width: 100%;
 }
