@@ -183,7 +183,6 @@ p {
   .profile-txt h1 {
     text-align: center;
     width: 120%;
-    text-align: center;
     display: block;
   }
 
@@ -257,8 +256,10 @@ p {
   }
 
   .main-pix img {
-    margin-left: -9rem;
+    margin: -6rem 9rem 0 -4rem; 
     text-align: center;
+    
+    
   }
 }
 
@@ -278,15 +279,63 @@ p {
   }
 
   .main-pix img {
-    margin-left: -8rem;
+    margin-left: -3rem;
     text-align: center;
   }
 
 }
 @media screen 
+  and (min-device-width: 320px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .profile-txt h1 {
+      width: 35rem;
+      font-size: 30px;
+      text-align: center;
+      margin-left: -17rem;
+      margin-right: 15rem;
+    }
+    .profile-txt p {
+      margin-bottom: 8rem;
+      width: 20rem;
+      margin-left: -9.1rem;
+    }
+    .main-pix img {
+      margin-left: -8rem;
+      margin-top: -8rem;
+      text-align: center;
+    }
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .profile-txt h1 {
+      width: 30rem;
+      font-size: 2rem;
+      text-align: center;
+      margin-left: -4.5rem;
+    }
+    .main-pix img {
+      margin-left: -2rem;
+      margin-top: -18rem;
+      text-align: center;
+    }
+  
+}
+@media screen 
+  and (min-device-width: 768px) and (max-device-width: 768px){
+    .main-pix img {
+      margin-left: -2rem;
+      margin-top: -11rem;
+      text-align: center;
+    }
+  }
+@media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
+  
 }
 
 
@@ -322,31 +371,13 @@ p {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 925px) {
-  #about {
-    margin-bottom: 2rem;
-    padding: 2rem 4rem 2rem 4rem;
-  }
-
-  #about h3 {
-    margin-left: 8rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  #about {
-    padding-top: 3rem;
-  }
-}
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
-  #about {
-    padding-top: 8rem;
+  #about h2{
+    padding-top: 6rem;
   }
-
   .about-text {
     width: 28rem;
-    margin-left: -8rem;
+    margin-left: -11rem;
     text-align: justify;
   }
 
@@ -362,20 +393,45 @@ p {
   }
 
   .about-text {
-    margin-left: -8rem;
+    margin-left: -9rem;
     text-align: justify;
   }
 
   #about h4 {
     text-align: center;
-    padding-left: 5rem;
+    padding-left: 6rem;
   }
 }
 
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    #about {
+      padding-top: 7rem;
+    }
+  
+    .about-text {
+      margin-left: -12rem;
+      width: 28rem;
+      text-align: justify;
+    }
+  
+    #about h4 {
+      text-align: center;
+      padding-left: 8rem;
+    }
+  }
+
+  @media screen 
+  and (min-device-width: 768px) and (max-device-width: 768px){}
+  #about{
+    padding-top: 3rem;
+  }
 /* forms */
 .contact-block {
   padding: 3rem;
-  max-width: 24rem;
+  max-width: 30rem;
   margin: auto;
   background-color: whitesmoke;
 }
@@ -390,7 +446,7 @@ p {
   text-align: center;
 }
 textarea{
-  width: 42rem;
+  width: 28rem;
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
@@ -433,7 +489,14 @@ textarea{
       width: 20rem;
     }
   }
-
+  @media screen 
+  and (min-device-width: 320px) 
+  and (max-device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    textarea{
+      width: 17rem;
+    }
+  }
   label {
     display: block;
     font-weight: bold;
