@@ -132,7 +132,7 @@ p {
 /* main head */
 .profile-head {
   padding: 2rem 10rem 2rem 10rem;
-  background-image: url(/images/section_bg02.jpg);
+  background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208575/personal%20web%20page%20images/section_bg02_ua6kdd.jpg);
   margin-bottom: 2rem;
 }
 
@@ -294,7 +294,7 @@ p {
 
 /* about me */
 #about {
-  background-image: url(/images/section_bg04.jpg);
+  background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208588/personal%20web%20page%20images/section_bg04_nuq72f.jpg);
   margin-top: -2rem;
   margin-bottom: -2.5rem;
   padding: 0 4rem;
@@ -509,7 +509,7 @@ textarea{
   }
 
   #footer {
-    background-image: url(/images/footer_bg.jpg);
+    background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208645/personal%20web%20page%20images/footer_bg_h359x9.png);
     text-align: center;
     padding: 0.8rem;
     color: white;
