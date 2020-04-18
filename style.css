@@ -241,7 +241,7 @@ p {
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
   .profile-txt h1 {
     font-size: 2rem;
     width: 20rem;
@@ -262,7 +262,7 @@ p {
   }
 }
 
-@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
   .profile-txt h1 {
     font-size: 2rem;
     width: 400%;
@@ -282,6 +282,11 @@ p {
     text-align: center;
   }
 
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 }
 
 /* 320px.
@@ -341,7 +346,7 @@ p {
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
   #about {
     padding-top: 8rem;
   }
@@ -358,7 +363,7 @@ p {
   }
 }
 
-@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   #about {
     padding-top: 8rem;
   }
@@ -377,28 +382,10 @@ p {
 /* forms */
 .contact-block {
   padding: 3rem;
-  max-width: 50%;
+  max-width: 24rem;
   margin: auto;
   background-color: whitesmoke;
 }
-
-@media screen and (min-device-width: 414px) and (max-device-width: 736px) {
-  .contact-block {
-    margin-left: -1.2rem;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .contact-block {
-    margin-left: -1.2rem;
-    max-width: 20rem;
-  }
-
-  textarea {
-    width: 15rem;
-  }
-}
-
 .call {
   color: cadetblue;
   font-size: large;
@@ -412,27 +399,42 @@ p {
 textarea{
   width: 42rem;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .call {
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
+  .contact-block {
+    margin-left: -1.3rem;
+  }
+  .call{
+    margin-bottom: 0.8rem;
     text-align: center;
   }
   .form-heading {
-    width: 120%;
     text-align: center;
+      width: 20rem;
+      margin-bottom: 0.9rem;
+      padding-left: -3rem;
+      padding-right: 3rem;
+  }
+  textarea{
+    width: 18rem;
   }
 }
-  @media screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  @media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
+    .contact-block {
+      margin-left: -1.2rem;
+    }
     .call {
       text-align: center;
       width: 130%;
       margin-bottom: 0.9rem;
-      padding-left: 1rem;
+      padding-left: -3rem;
+      padding-right: 3rem;
     }
 
     .form-heading {
-      width: 130%;
+      width: 18rem;
       text-align: center;
-      padding-left: 1.6rem;
+      padding-left: 1rem;
     }
     textarea{
       width: 20rem;
