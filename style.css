@@ -289,13 +289,6 @@ p {
   and (-webkit-min-device-pixel-ratio: 1) { 
 }
 
-/* 320px.
-480px.
-600px.
-768px.
-900px.
-1024px.
-1200px. */
 
 /* about me */
 #about {
@@ -432,7 +425,7 @@ textarea{
     }
 
     .form-heading {
-      width: 18rem;
+      width: 22rem;
       text-align: center;
       padding-left: 1rem;
     }
