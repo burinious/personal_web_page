@@ -286,19 +286,21 @@ p {
 }
 @media screen 
   and (min-device-width: 320px) 
-  and (max-device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
+  and (max-device-height: 568px) 
+  and (-webkit-device-pixel-ratio: 2) {
     .profile-txt h1 {
-      width: 35rem;
-      font-size: 30px;
+      width: 20rem;
+      font-size: 1.5rem;
       text-align: center;
-      margin-left: -17rem;
+      margin-left: -10rem;
       margin-right: 15rem;
+      margin-bottom: -1rem;
     }
     .profile-txt p {
       margin-bottom: 8rem;
       width: 20rem;
-      margin-left: -9.1rem;
+      margin-left: -10rem;
+      padding: 2rem;
     }
     .main-pix img {
       margin-left: -8rem;
@@ -324,18 +326,14 @@ p {
   
 }
 @media screen 
-  and (min-device-width: 768px) and (max-device-width: 768px){
-    .main-pix img {
-      margin-left: -2rem;
-      margin-top: -11rem;
-      text-align: center;
-    }
-  }
-@media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-  
+    .main-pix img {
+      margin-left: -2rem;
+      margin-top: -20rem;
+      text-align: center;
+    }
 }
 
 
@@ -403,14 +401,16 @@ p {
   }
 }
 
-@media screen 
+  @media screen 
   and (min-device-width: 320px) 
-  and (max-device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    #about {
-      padding-top: 7rem;
+  and (max-device-height: 568px) 
+  and (-webkit-device-pixel-ratio: 2){
+    #about{
+      width: 20rem;
     }
-  
+    #about h2{
+      padding-top: 4rem;
+    }
     .about-text {
       margin-left: -12rem;
       width: 28rem;
@@ -489,13 +489,14 @@ textarea{
       width: 20rem;
     }
   }
+  
   @media screen 
   and (min-device-width: 320px) 
-  and (max-device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    textarea{
-      width: 17rem;
-    }
+  and (max-device-height: 568px) 
+  and (-webkit-device-pixel-ratio: 2){
+textarea{
+  width: 100%;
+}
   }
   label {
     display: block;
