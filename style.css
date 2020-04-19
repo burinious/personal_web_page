@@ -407,7 +407,29 @@ p {
       text-align: center;
     }
 }
-
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .profile-txt h1 {
+      width: 12rem;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-left: -6rem;
+    }
+    .profile-txt p {
+      margin-bottom: 8rem;
+      text-align: justify;
+      font-size:0.9rem;
+      width: 12rem;
+      margin-left: -5rem;
+    }
+    .main-pix img {
+      margin-left: -7rem;
+      margin-top: -7rem;
+      text-align: center;
+    }
+}
 
 /* about me */
 #about {
@@ -535,6 +557,22 @@ padding-top: 4rem;
     }
   
 }
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #about{
+      padding-top: 8rem;
+    }
+    .about-text {
+      margin-left: -11rem;
+      text-align: justify;
+    }
+     #about h4 {
+      text-align: center;
+      padding-left: 6rem;
+    }
+  }
 /* forms */
 .contact-block {
   padding: 3rem;
@@ -649,6 +687,14 @@ textarea{
     }
   
 }
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    textarea{
+      width: 15rem;
+    }
+  }
   label {
     display: block;
     font-weight: bold;
