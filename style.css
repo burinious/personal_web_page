@@ -374,7 +374,29 @@ p {
     }
   
 }
-
+@media only screen 
+  and (min-device-width: 720px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .profile-txt h1 {
+      width: 28rem;
+      font-size: 3rem;
+      text-align: center;
+      margin-left: -4.5rem;
+    }
+    .profile-txt p {
+      margin-bottom: 8rem;
+      text-align: justify;
+      width: 30rem;
+      margin-left: -3rem;
+    }
+    .main-pix img {
+      margin-left: -1rem;
+      margin-top: -7rem;
+      text-align: center;
+    }
+  
+}
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -499,10 +521,20 @@ padding-top: 4rem;
     }
   }
   @media screen 
-  and (min-device-width: 768px) and (max-device-width: 768px){}
+  and (min-device-width: 768px) and (max-device-width: 768px){
   #about{
     padding-top: 3rem;
   }
+}
+@media only screen 
+  and (min-device-width: 720px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #about{
+      padding-top: 8rem;
+    }
+  
+}
 /* forms */
 .contact-block {
   padding: 3rem;
@@ -598,6 +630,25 @@ textarea{
   width: 100%;
 }
   }
+  @media only screen 
+  and (min-device-width: 720px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .contact-block {
+      margin-left: 6rem;
+    }
+    .call {
+      text-align: center;
+      width: 22rem;
+    }
+
+    .form-heading {
+      width: 22rem;
+      text-align: center;
+      padding-left: 1rem;
+    }
+  
+}
   label {
     display: block;
     font-weight: bold;
