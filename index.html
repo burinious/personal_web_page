@@ -21,9 +21,10 @@
             </div>
         </div>
     </header>
-    <section class="profile-head">
-        <div class="profile-txt">
-            <h1 class="big-heading">I'm Ayoyinka Akomolafe<br> A web Developer</h1>
+
+    <div class="top-container">
+        <div>
+            <h1>I'm Ayoyinka Akomolafe<br> A web Developer</h1>
             <p>I'm a graduate of Computer Science, I started coding right after i graduated from school, wanted to build
                 lovely applications for myself and also to be employable. Over time, I have gained a wealth of
                 experience designing and developing web applications <br><span class="profile-txt-sub">--<i>I love
@@ -31,13 +32,15 @@
                         write-ups, my interests are in the world of technology, sci-fictions, I'm just a tech
                         savy....</i></span></p>
         </div>
-        <div class="main-pix">
-            <img src="https://res.cloudinary.com/burinious/image/upload/v1587208572/personal%20web%20page%20images/my_pix_hza8yh.png"
+
+        <div class="middle-container">
+            <img class="img1"
+                src="https://res.cloudinary.com/burinious/image/upload/v1587208572/personal%20web%20page%20images/my_pix_hza8yh.png"
                 alt="mypix">
         </div>
-    </section>
+    </div>
 
-    <section id="about">
+    <div id="about">
         <h2>About me</h2>
         <div class="about-text">
             <h3> <i>state of origin:</i> <span>Ekiti State</span></h3>
@@ -46,74 +49,71 @@
             <h3><i>home town:</i> <span>Ikere</span></h3>
             <h4>slack ID: burinious</h4>
         </div>
-    </section>
+    </div>
 
     <!-- Add a contact form at the bottom of your page. -->
-    <section class="contact-block" id="contact">
-        <div class="call" id="call-me">Get in Touch</div>
-        <div>
-            <div class="">
-                <div class="">
+    <div class="form-container">
+        <div id="contact">Get in Touch</div>
+        <div class="form-heading">
+            <h3>Please fill in your details and you will get a response within 24 hours</h3>
+        </div> <br>
+
+        <div class="call">
+            <form class="validate" action="https://formspree.io/akomolafeayoyinka@gmail.com" method="POST">
+
+                <div>
+                    <label for="designation">Title</label>
+                    <select id="designation" name="Title" required>
+                        <option disabled selected></option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Barr</option>
+                        <option value="Engr">Engr</option>
+                        <option value="Dr">Dr</option>
+                    </select>
+
                     <div>
-                        <div class="form-heading">
-                            <h3>Please fill in your details and you will get a response within 24 hours</h3>
-                        </div> <br>
-
-                        <form class="validate" action="https://formspree.io/akomolafeayoyinka@gmail.com" method="POST">
-
-                            <div>
-                                <label for="designation">Title</label>
-                                <select id="designation" name="Title" required>
-                                    <option disabled selected></option>
-                                    <option value="Mr">Mr</option>
-                                    <option value="Mrs">Mrs</option>
-                                    <option value="Ms">Barr</option>
-                                    <option value="Engr">Engr</option>
-                                    <option value="Dr">Dr</option>
-                                </select>
-
-                                <div>
-                                    <label for="text">Full Name</label>
-                                    <input type="text" id="text" name="Full name" required>
-                                </div>
-
-                                <div>
-                                    <label for="email"> Your Email Address</label>
-                                    <input name="Email Address" type="email" id="email"
-                                        title="The domain portion of the email address is invalid (the portion after the @)."
-                                        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
-                                        required>
-                                </div>
-                                <div>
-                                    <label for="purpose">Purpose</label>
-                                    <select id="purpose" name="Purpose for contacting me" required>
-                                        <option disabled selected></option>
-                                        <option value="Have a Project">Have a Business Proposal</option>
-                                        <option value="Have a Job Offer">Have a Job Offer</option>
-                                        <option value="Need to fix a bug">Need to fix a Software bug </option>
-                                        <option value="Personal">Personal</option>
-                                        <option value="Call for a Presentation">Call for Presentation</option>
-                                    </select>
-
-                                </div>
-                                <div>
-                                    <label for="text">Message</label>
-                                    <textarea rows="20" cols="50" name="Message details" minlength="10" maxlength="200"
-                                        placeholder="How may I assist you?..." required></textarea>
-                                </div><br>
-
-                                <input type="submit" class="button" value="Send Message">
-                            </div>
-                        </form>
+                        <label for="text">Full Name</label>
+                        <input type="text" id="text" name="Full name" required>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="footer">
-        <small>© 2020 Ayoyinka Akomolafe.</small>
-    </section>
+                    <div>
+                        <label for="email"> Your Email Address</label>
+                        <input name="Email Address" type="email" id="email"
+                            title="The domain portion of the email address is invalid (the portion after the @)."
+                            pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
+                            required>
+                    </div>
+                    <div>
+                        <label for="purpose">Purpose</label>
+                        <select id="purpose" name="Purpose for contacting me" required>
+                            <option disabled selected></option>
+                            <option value="Have a Project">Have a Business Proposal</option>
+                            <option value="Have a Job Offer">Have a Job Offer</option>
+                            <option value="Need to fix a bug">Need to fix a Software bug </option>
+                            <option value="Personal">Personal</option>
+                            <option value="Call for a Presentation">Call for Presentation</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="text">Message</label>
+                        <textarea rows="20" cols="50" name="Message details" minlength="10" maxlength="200"
+                            placeholder="How may I assist you?..." required></textarea>
+                    </div><br>
+
+                    <input type="submit" class="btn" value="Send Message">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/akomolafe-ayoyinka-977900172/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/buriniousy">Twitter</a>
+        <a class="footer-link" href="https://github.com/burinious">Github</a>
+        <a class="footer-link" href="https://www.burinious.io/">Website</a>
+        <p class="copyright">© 2020 Ayoyinka Akomolafe.</p>
+    </div>
     <script src="script.js"></script>
 </body>
 

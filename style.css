@@ -1,35 +1,41 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Rubik", sans-serif;
+  margin: 0;
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
   font-weight: normal;
   font-style: normal;
-  background-color: whitesmoke;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Rufina", serif;
-  color: #000a2d;
-  margin-top: 0px;
-  font-style: normal;
-  font-weight: 500;
-  text-transform: normal
+h1 {
+  margin: 10px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 4rem;
+  color: #66BFBF;
 }
 
 p {
   font-family: "Rubik", sans-serif;
   color: #10285d;
-  font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 15px;
+  line-height: 2;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  text-align: justify;
   font-weight: normal
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+.img1 {
+  border-radius: 15px;
 }
 
 /* navbar */
@@ -56,8 +62,9 @@ p {
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #002d5b;
+  background-color: #11999E;
   color: white;
+  border-radius: 10px;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -74,12 +81,13 @@ p {
 .dropbtn {
   background-color: cadetblue;
   color: white;
+  border-radius: 10px;
 }
 
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
   .topnav a:not(.brand),
   .dropdown .dropbtn {
@@ -97,7 +105,7 @@ p {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
@@ -129,326 +137,44 @@ p {
   }
 }
 
-/* main head */
-.profile-head {
-  padding: 2rem 10rem 2rem 10rem;
+/* containers */
+.top-container {
   background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208575/personal%20web%20page%20images/section_bg02_ua6kdd.jpg);
-  margin-bottom: 2rem;
-}
-
-.profile-txt {
-  width: 80%;
-}
-
-.profile-txt h1 {
-  width: 80%;
-  text-align: center;
-  font-size: 70px;
-  font-weight: 700;
-  margin-bottom: 14px;
-  color: #002d5b;
-  line-height: 1.2;
-  text-transform: capitalize;
-  margin-bottom: 29px;
-  display: block;
-}
-
-.profile-txt p {
-  color: #464d65;
-  margin-bottom: 42px;
-  width: 80%;
-  text-align: justify;
-}
-
-.profile-txt-sub {
-  color: cadetblue;
-}
-
-.main-pix {
-  float: right;
+  padding-top: 50px;
   position: relative;
-  width: 50%;
-  text-align: center;
 }
 
-.main-pix img {
-  margin-top: -50%;
-  position: absolute;
-  border-radius: 10px;
-
+.middle-container {
+  margin: 50px 0 0 0;
+}
+.form-container{
+  background-color: whitesmoke;
+  padding-top: 10px;
+}
+.bottom-container {
+  background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208645/personal%20web%20page%20images/footer_bg_h359x9.png);
+  padding: 30px 0 20px;
 }
 
-
-@media screen and (max-width: 736px) {
-  .profile-txt h1 {
-    text-align: center;
-    width: 120%;
-    display: block;
-  }
-
-  .profile-txt p {
-    width: 120%;
-    text-align: justify;
-    margin-bottom: 14rem;
-  }
-
-  .main-pix {
-    float: right;
-    position: absolute;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 6rem;
-  }
-
-  .main-pix img {
-    margin-top: -50%;
-    position: relative;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-
-  }
-}
-
-@media screen and (max-width: 925px) {
-  .profile-txt h1 {
-    width: 170%;
-    text-align: center;
-    display: block;
-    margin-left: -4rem;
-  }
-
-  .profile-txt p {
-    width: 180%;
-    text-align: justify;
-    margin-bottom: 13rem;
-    margin-left: -5em;
-  }
-
-  .main-pix {
-    float: right;
-    position: absolute;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 6rem;
-  }
-
-  .main-pix img {
-    margin-top: -50%;
-    position: relative;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
-  .main-pix img {
-    margin-right: 2.5rem;
-    text-align: center; 
-
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
-  .profile-txt h1 {
-    font-size: 2rem;
-    width: 20rem;
-    text-align: center;
-    margin-left: -9rem;
-  }
-
-  .profile-txt p {
-    margin-bottom: 8rem;
-    width: 20rem;
-    text-align: justify;
-    margin-left: -9rem;
-  }
-
-  .main-pix img {
-    margin: -6rem 9rem 0 -4rem; 
-    text-align: center;
-    
-    
-  }
-}
-@media screen and (min-device-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2){
-  .profile-txt h1 {
-    padding-left: 2rem;
-  }
-  .profile-txt p {
-    margin-bottom: 8rem;
-    width: 20rem;
-    text-align: justify;
-    margin-left: -8rem;
-  }
-}
-@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
-  .profile-txt h1 {
-    font-size: 2rem;
-    width: 28rem;
-    text-align: center;
-    margin-left: -12rem;
-  }
-
-  .profile-txt p {
-    margin-bottom: 8rem;
-    width: 20rem;
-    text-align: justify;
-    margin-left: -7.2rem;
-  }
-
-  .main-pix img {
-    margin-left: -3rem;
-    text-align: center;
-  }
-}
-  @media only screen and (min-device-width: 425px) and (max-device-width: 483px) and (-webkit-min-device-pixel-ratio: 2){
-    .profile-txt p {
-      width: 28rem;
-      margin-left: 10rem;
-      padding-right: -10rem;
-    }
-    .main-pix img {
-      padding-left: 5rem;
-  }
-}
-@media screen 
-  and (min-device-width: 360px) 
-  and (max-device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    .profile-txt h1 {
-      width: 20rem;
-      font-size: 1.5rem;
-      text-align: center;
-      margin-left: -10rem;
-      margin-right: 15rem;
-      margin-bottom: -1rem;
-    }
-    .profile-txt p {
-      margin-bottom: 8rem;
-      width: 20rem;
-      margin-left: -10rem;
-      padding: 2rem;
-    }
-    .main-pix img {
-      margin-left: -8rem;
-      margin-top: -8rem;
-      text-align: center;
-    }
-}
-@media screen 
-  and (min-device-width: 320px) 
-  and (max-device-height: 568px) 
-  and (-webkit-device-pixel-ratio: 2) {
-    .profile-txt h1 {
-      width: 20rem;
-      font-size: 1.5rem;
-      text-align: center;
-      margin-left: -10rem;
-      margin-right: 15rem;
-      margin-bottom: -1rem;
-    }
-    .profile-txt p {
-      margin-bottom: 8rem;
-      width: 20rem;
-      margin-left: -10rem;
-      padding: 2rem;
-    }
-    .main-pix img {
-      margin-left: -8rem;
-      margin-top: -8rem;
-      text-align: center;
-    }
-}
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .profile-txt h1 {
-      width: 30rem;
-      font-size: 2rem;
-      text-align: center;
-      margin-left: -4.5rem;
-    }
-    .main-pix img {
-      margin-left: -1rem;
-      margin-top: -11rem;
-      text-align: center;
-    }
-  
-}
-@media only screen 
-  and (min-device-width: 720px) 
-  and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .profile-txt h1 {
-      width: 28rem;
-      font-size: 3rem;
-      text-align: center;
-      margin-left: -4.5rem;
-    }
-    .profile-txt p {
-      margin-bottom: 8rem;
-      text-align: justify;
-      width: 30rem;
-      margin-left: -3rem;
-    }
-    .main-pix img {
-      margin-left: -1rem;
-      margin-top: -7rem;
-      text-align: center;
-    }
-  
-}
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .main-pix img {
-      margin-left: -2rem;
-      margin-top: -20rem;
-      text-align: center;
-    }
-}
-@media screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    .profile-txt h1 {
-      width: 12rem;
-      font-size: 1.8rem;
-      text-align: center;
-      margin-left: -6rem;
-    }
-    .profile-txt p {
-      margin-bottom: 8rem;
-      text-align: justify;
-      font-size:0.9rem;
-      width: 12rem;
-      margin-left: -5rem;
-    }
-    .main-pix img {
-      margin-left: -7rem;
-      margin-top: -7rem;
-      text-align: center;
-    }
-}
-
-/* about me */
+/* about */
 #about {
   background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208588/personal%20web%20page%20images/section_bg04_nuq72f.jpg);
-  margin-top: -2rem;
-  margin-bottom: -2.5rem;
-  padding: 0 4rem;
+  padding: 50px 0;
+}
+
+.about-text {
+  width: 100%;
 }
 
 #about h2 {
+  font-family: 'Sacramento', cursive;
   color: cadetblue;
-  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 #about h3 {
   text-transform: uppercase;
-  margin-left: 10rem;
 }
 
 #about h3 span {
@@ -462,311 +188,79 @@ p {
   font-style: italic;
   font-size: 2rem;
 }
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
-  #about h2{
-padding-top: 4rem;
-  }
-  .about-text {
-    width: 28rem;
-    margin-left: -11rem;
-    text-align: justify;
-  }
-  #about h4 {
-    text-align: center;
-    padding-left: 8rem;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
-  #about h2{
-    padding-top: 6rem;
-  }
-  .about-text {
-    width: 28rem;
-    margin-left: -11rem;
-    text-align: justify;
-  }
 
-  #about h4 {
-    text-align: center;
-    padding-left: 5rem;
-  }
-}
-@media screen and (min-device-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2){
-  #about h4 {
-    padding-left: 8rem;
-  }
-}
-@media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  #about {
-    padding-top: 8rem;
-  }
-
-  .about-text {
-    margin-left: -9rem;
-    text-align: justify;
-  }
-
-  #about h4 {
-    text-align: center;
-    padding-left: 6rem;
-  }
-}
-
-  @media screen 
-  and (min-device-width: 320px) 
-  and (max-device-height: 568px) 
-  and (-webkit-device-pixel-ratio: 2){
-    #about{
-      width: 20rem;
-    }
-    #about h2{
-      padding-top: 4rem;
-    }
-    .about-text {
-      margin-left: -12rem;
-      width: 28rem;
-      text-align: justify;
-    }
-  
-    #about h4 {
-      text-align: center;
-      padding-left: 8rem;
-    }
-  }
-  @media only screen and (min-device-width: 425px) and (max-device-width: 483px) and (-webkit-min-device-pixel-ratio: 2){
-    #about {
-      width: 28rem;
-    }
-    .about-text {
-      margin-left: -10rem;
-      text-align: justify;
-    }
-  }
-  @media screen 
-  and (min-device-width: 768px) and (max-device-width: 768px){
-  #about{
-    padding-top: 3rem;
-  }
-}
-@media only screen 
-  and (min-device-width: 720px) 
-  and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #about{
-      padding-top: 8rem;
-    }
-  
-}
-@media screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    #about{
-      padding-top: 8rem;
-    }
-    .about-text {
-      margin-left: -11rem;
-      text-align: justify;
-    }
-     #about h4 {
-      text-align: center;
-      padding-left: 6rem;
-    }
-  }
 /* forms */
-.contact-block {
-  padding: 3rem;
-  max-width: 30rem;
-  margin: auto;
-  background-color: whitesmoke;
-}
-.call {
-  color: cadetblue;
-  font-size: large;
-  font-weight: 500;
+#contact{
+  margin: 20px 0 0 0;
   font-style: italic;
+  color: cadetblue;
+  font-weight: bolder;
+}
+.form-heading {
   text-align: center;
+  padding: 0 30px;
 }
-.form-heading{
+
+[type="checkbox"],
+[type="radio"] {
+margin-bottom: 0.5em;
+width: auto;
+}
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 0.5em;
+}
+
+.label-normal {
+font-weight: normal;
+}
+
+
+input,
+select {
+display: inline-block;
+font-size: 1em;
+margin-bottom: 1em;
+width: 50%;
+padding: 0.25em 0.5em;
+}
+textarea {
+  width: 50%;
+}
+
+.copyright {
+  color: #EAF6F6;
   text-align: center;
+  font-size: 0.75em;
+  padding: 20px 0;
 }
-textarea{
-  width: 28rem;
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  color: #EAF6F6 !important;
+  font-size: 20px;
+  text-shadow: 2px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #11999E;
+  padding: 10px 25px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  border: 2px solid #66BFBF;
+  background: #66BFBF;
+  background: linear-gradient(top, #66BFBF, #66BFBF);
+  background: -ms-linear-gradient(top, #66BFBF, #66BFBF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#66BFBF), to(#66BFBF));
+  background: -moz-linear-gradient(top, #66BFBF, #66BFBF);
 }
-@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2){
-  textarea{
-    width: 16rem;
-  }
+input.btn{
+  width: 13rem;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 1){
-  .contact-block {
-    margin-left: -1.3rem;
-    width: 20rem;
-  }
-  .call{
-    margin-bottom: 0.8rem;
-    text-align: center;
-  }
-  .form-heading {
-    text-align: center;
-      width: 20rem;
-      margin-bottom: 0.9rem;
-      padding-left: -3rem;
-      padding-right: 3rem;
-  }
-  textarea{
-    max-width: 18rem;
-  }
+.btn:hover {
+  color: #EAF6F6 !important;
+  background: #11999E;
+  background: linear-gradient(top, #11999E, #11999E);
+  background: -ms-linear-gradient(top, #11999E, #11999E);
+  background: -webkit-gradient(linear, left top, left bottom, from(#11999E), to(#11999E));
+  background: -moz-linear-gradient(top, #11999E, #11999E);
 }
-@media screen and (min-device-width: 411px) and (max-device-width: 731px) and (-webkit-min-device-pixel-ratio: 2){
-  .contact-block {
-    margin-left: 1rem;
-    width: 18rem;
-  }
-  textarea{
-    width: 28rem;
-  }
-}
-  @media screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3){
-    .contact-block {
-      margin-left: -1.2rem;
-    }
-    .call {
-      text-align: center;
-      width: 130%;
-      margin-bottom: 0.9rem;
-      padding-left: -3rem;
-      padding-right: 3rem;
-    }
-
-    .form-heading {
-      width: 22rem;
-      text-align: center;
-      padding-left: 1rem;
-    }
-    textarea{
-      width: 20rem;
-    }
-  }
-  
-  @media screen 
-  and (min-device-width: 320px) 
-  and (max-device-height: 568px) 
-  and (-webkit-device-pixel-ratio: 2){
-textarea{
-  width: 100%;
-}
-  }
-  @media screen 
-  and (min-device-width: 375px) 
-  and (max-device-height: 812px) 
-  and (-webkit-device-pixel-ratio: 1){
-    .contact-block{
-      width: 28rem;;
-    }
-textarea{
-  width: 100%;
-}
-  }
-  @media only screen 
-  and (min-device-width: 720px) 
-  and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .contact-block {
-      margin-left: 6rem;
-    }
-    .call {
-      text-align: center;
-      width: 22rem;
-    }
-
-    .form-heading {
-      width: 22rem;
-      text-align: center;
-      padding-left: 1rem;
-    }
-  
-}
-@media screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 1280px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-    textarea{
-      width: 15rem;
-    }
-  }
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-
-  .align {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    width: 88%;
-  }
-
-  .label-normal {
-    font-weight: normal;
-  }
-
-
-  input,
-  select {
-    display: inline-block;
-    font-size: 1em;
-    margin-bottom: 1em;
-    width: 100%;
-    padding: 0.25em 0.5em;
-  }
-
-  @media screen and (max-width: 700px) {
-
-    input,
-    select {
-      padding: 0.25em 0.5em;
-    }
-  }
-
-  [type="checkbox"],
-  [type="radio"] {
-    margin-bottom: 0.5em;
-    width: auto;
-  }
-
-  .button {
-    background-color: cadetblue;
-    border: 1px solid cadetblue;
-    border-radius: 10px;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 0.9375em;
-    font-weight: normal;
-    line-height: 1.2;
-    margin-right: 0.3125em;
-    margin-bottom: 0.3125em;
-    padding: 0.5em 0.6875em;
-    width: auto;
-  }
-
-  .button:active,
-  .button:focus,
-  .button:hover {
-    background-color: #002d5b;
-    border-color: none;
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .button:active {
-    box-shadow: inset 0 0.15625em 0.25em rgba(0, 0, 0, 0.15), 0 1px 0.15625em rgba(0, 0, 0, 0.05);
-  }
-
-  #footer {
-    background-image: url(https://res.cloudinary.com/burinious/image/upload/v1587208645/personal%20web%20page%20images/footer_bg_h359x9.png);
-    text-align: center;
-    padding: 0.8rem;
-    color: white;
-  }
